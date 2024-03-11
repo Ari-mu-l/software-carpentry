@@ -11,3 +11,65 @@ Most of the material is in the form of Jupyter notebooks that can be opened and 
 Part of the material has been reused from:
 * Other ROOT training courses: https://github.com/root-project/training
 * Oksana Shadura's (@oshadura) ROOT training: https://github.com/oshadura/carpentries-root-training
+
+# PURSUE2024 Setup
+
+On your own laptop, review the content of your `~/.ssh/config` file by executing:
+```
+cat ~/.ssh/config
+```
+
+In case the file does already contain the following lines, add:
+```
+    Host cmslpc*.fnal.gov
+        StrictHostKeyChecking no
+        UserKnownHostsFile /dev/null
+```
+
+Get a valid Kerberos ticket by executing:
+```
+kinit username@FNAL.GOV
+```
+
+Log in cmslpc:
+```
+ssh -L localhost:9999:localhost:9999 username@cmslpc-sl7.fnal.gov
+```
+
+Setup CMSSW environment (execute the following ONLY IF you do not have CMSSW_10_6_30/ in your working directory):
+```
+cd nobackup/
+source /cvmfs/cms.cern.ch/cmsset_default.sh
+cmsrel CMSSW_10_6_30
+cd CMSSW_10_6_30/src
+cmsenv
+```
+
+If you already have CMSSW_10_6_30/ in your directory,
+```
+cd CMSSW_10_6_30/src
+source /cvmfs/cms.cern.ch/cmsset_default.sh
+cmsenv
+```
+
+Start Jupyter with this command:
+```
+jupyter notebook --port 9999 --ip 127.0.0.1 --no-browser
+```
+
+After a pause (while cmslpc loads the necessary libraries for the first time) you should see a message like the following:
+```
+[I 16:44:27.671 NotebookApp] Writing notebook server cookie secret to /run/user/57409/jupyter/notebook_cookie_secret
+[I 16:44:47.468 NotebookApp] Serving notebooks from local directory: /uscms_data/d3/username/CMSSW_10_6_30/src
+[I 16:44:47.468 NotebookApp] The Jupyter Notebook is running at:
+[I 16:44:47.468 NotebookApp] http://127.0.0.1:9999/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+[I 16:44:47.468 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 16:44:47.605 NotebookApp]
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/57409/jupyter/nbserver-14804-open.html
+    Or copy and paste one of these URLs:
+        http://127.0.0.1:9999/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+```
+
+Copy and paste the last line (`http://127.0.0.1:9999/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`) to your browser, which opens up a window to Jupyter notebook.
