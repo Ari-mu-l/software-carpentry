@@ -47,7 +47,7 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "9a99e30e",
+   "id": "9c73cbfd",
    "metadata": {},
    "outputs": [
     {
@@ -118,7 +118,7 @@
   {
    "cell_type": "code",
    "execution_count": 14,
-   "id": "9f1c2ace",
+   "id": "6e4ed6c7",
    "metadata": {},
    "outputs": [
     {
@@ -181,23 +181,14 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 15,
+   "execution_count": null,
    "id": "d7610f52",
    "metadata": {
     "slideshow": {
      "slide_type": "fragment"
     }
    },
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Lepton eta cut: pass=4880       all=10000      -- eff=48.80 % cumulative eff=48.80 %\n",
-      "Lepton phi cut: pass=3842       all=4880       -- eff=78.73 % cumulative eff=38.42 %\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "df = ROOT.RDataFrame(\"sig_tree\", \"https://root.cern/files/Higgs_data.root\")\n",
     "\n",
@@ -206,17 +197,6 @@
     "\n",
     "rep = df.Report()\n",
     "rep.Print()"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "eb52adf1",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "# Try it!\n",
-    "# What did you learn from the printouts from df.Report()?"
    ]
   },
   {

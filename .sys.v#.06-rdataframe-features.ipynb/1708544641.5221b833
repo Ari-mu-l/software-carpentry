@@ -211,12 +211,11 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "eb52adf1",
+   "id": "d10ebe81",
    "metadata": {},
    "outputs": [],
    "source": [
-    "# Try it!\n",
-    "# What did you learn from the printouts from df.Report()?"
+    "# Try it!\n"
    ]
   },
   {

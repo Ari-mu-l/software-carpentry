@@ -332,10 +332,8 @@
    "outputs": [],
    "source": [
     "# Try it!\n",
-    "# To-do: Fetch the histogram from try_it.root with Get()\n",
-    "h_try = \n",
-    "\n",
-    "print(h_try)"
+    "# To-do: Fetch the histogram from try_it.root\n",
+    "h_try ="
    ]
   },
   {

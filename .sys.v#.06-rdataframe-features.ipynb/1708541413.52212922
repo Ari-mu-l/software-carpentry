@@ -47,7 +47,7 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "9a99e30e",
+   "id": "5ce788a9",
    "metadata": {},
    "outputs": [
     {
@@ -64,7 +64,7 @@
    "source": [
     "# Try it!\n",
     "# To-do: Save only \"a\" and \"c\" columns with Snapshot() to a tree named \"tree_try\" in a file named \"file_try.root\"\n",
-    "df1.Snapshot(\"\", \"\", [\"\", \"\"])"
+    "df1.Snapshot(\"tree_try\", \"file_try.root\", [\"a\", \"c\"])"
    ]
   },
   {
@@ -81,35 +81,14 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 5,
+   "execution_count": null,
    "id": "7ca9de7b",
    "metadata": {
     "slideshow": {
      "slide_type": "fragment"
     }
    },
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "TTree  Feb 21 19:48 2024 outtree;1 \"outtree\" \n",
-      "  a  \"a/D\"  16071\n",
-      "  b  \"b/D\"  16071\n",
-      "  c  \"c/D\"  16071\n",
-      "  Cluster INCLUSIVE ranges:\n",
-      "   - # 0: [0, 1999]\n",
-      "  The total number of clusters is 1\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "Error in <TNetXNGFile::Open>: [ERROR] Server responded with an error: [3001] Required argument not present\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "%%bash\n",
     "rootls -lt outtree.root"
@@ -117,27 +96,15 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 14,
-   "id": "9f1c2ace",
+   "execution_count": null,
+   "id": "e44a6409",
    "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "TTree  Feb 21 19:49 2024 tree_try;1 \"tree_try\" \n",
-      "  a  \"a/D\"  16072\n",
-      "  c  \"c/D\"  16072\n",
-      "  Cluster INCLUSIVE ranges:\n",
-      "   - # 0: [0, 1999]\n",
-      "  The total number of clusters is 1\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
-    "%%bash\n",
     "# Try it!\n",
-    "# To-do: Check the content of file_try.root\n"
+    "# To-do: Check the content of file_try.root\n",
+    "%%bash\n",
+    "rootls -lt file_try.root"
    ]
   },
   {
@@ -181,23 +148,14 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 15,
+   "execution_count": null,
    "id": "d7610f52",
    "metadata": {
     "slideshow": {
      "slide_type": "fragment"
     }
    },
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Lepton eta cut: pass=4880       all=10000      -- eff=48.80 % cumulative eff=48.80 %\n",
-      "Lepton phi cut: pass=3842       all=4880       -- eff=78.73 % cumulative eff=38.42 %\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "df = ROOT.RDataFrame(\"sig_tree\", \"https://root.cern/files/Higgs_data.root\")\n",
     "\n",
@@ -206,17 +164,6 @@
     "\n",
     "rep = df.Report()\n",
     "rep.Print()"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "eb52adf1",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "# Try it!\n",
-    "# What did you learn from the printouts from df.Report()?"
    ]
   },
   {

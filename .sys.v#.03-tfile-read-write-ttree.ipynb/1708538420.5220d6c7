@@ -258,7 +258,7 @@
    "outputs": [],
    "source": [
     "# Try it!\n",
-    "# To-do: check if the try_it.root file exists\n"
+    "# To-do: check "
    ]
   },
   {
@@ -284,16 +284,6 @@
    "source": [
     "%%bash\n",
     "rootls -l my_file.root"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "# Try it!\n",
-    "# To-do: Check the content of try_it.root. Verify that the histogram is stored under the name \"try_histo\""
    ]
   },
   {
@@ -323,19 +313,6 @@
     "\n",
     "h = f.Get(\"my_histo\")\n",
     "print(h)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "# Try it!\n",
-    "# To-do: Fetch the histogram from try_it.root with Get()\n",
-    "h_try = \n",
-    "\n",
-    "print(h_try)"
    ]
   },
   {

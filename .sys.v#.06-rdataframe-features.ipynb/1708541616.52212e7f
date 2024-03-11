@@ -47,7 +47,7 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "9a99e30e",
+   "id": "8a442cae",
    "metadata": {},
    "outputs": [
     {
@@ -118,7 +118,7 @@
   {
    "cell_type": "code",
    "execution_count": 14,
-   "id": "9f1c2ace",
+   "id": "58dfdc53",
    "metadata": {},
    "outputs": [
     {
@@ -206,17 +206,6 @@
     "\n",
     "rep = df.Report()\n",
     "rep.Print()"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "eb52adf1",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "# Try it!\n",
-    "# What did you learn from the printouts from df.Report()?"
    ]
   },
   {

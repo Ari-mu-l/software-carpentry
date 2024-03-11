@@ -209,17 +209,6 @@
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "eb52adf1",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "# Try it!\n",
-    "# What did you learn from the printouts from df.Report()?"
-   ]
-  },
-  {
    "cell_type": "markdown",
    "id": "f3be5b9d",
    "metadata": {
