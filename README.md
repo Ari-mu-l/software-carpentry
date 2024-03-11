@@ -36,18 +36,18 @@ Log in cmslpc:
 ssh -L localhost:9999:localhost:9999 username@cmslpc-sl7.fnal.gov
 ```
 
-\[Do only once] Setup CMSSW environment (execute the following ONLY IF you do not have CMSSW_10_6_30/ in your working directory):
+\[Do only once] Setup CMSSW environment (execute the following ONLY IF you do not have CMSSW_12_4_8/ in your working directory):
 ```
 cd nobackup/
 source /cvmfs/cms.cern.ch/cmsset_default.sh
-cmsrel CMSSW_10_6_30
-cd CMSSW_10_6_30/src
+cmsrel CMSSW_12_4_8
+cd CMSSW_12_4_8/src
 cmsenv
 ```
 
-\[Do everytime] If you already have CMSSW_10_6_30/ in your directory,
+\[Do everytime] If you already have CMSSW_12_4_8/ in your directory,
 ```
-cd CMSSW_10_6_30/src
+cd CMSSW_12_4_8/src
 source /cvmfs/cms.cern.ch/cmsset_default.sh
 cmsenv
 ```
@@ -65,17 +65,18 @@ jupyter notebook --port 9999 --ip 127.0.0.1 --no-browser
 
 After a pause (while cmslpc loads the necessary libraries for the first time) you should see a message like the following:
 ```
-[I 16:44:27.671 NotebookApp] Writing notebook server cookie secret to /run/user/57409/jupyter/notebook_cookie_secret
-[I 16:44:47.468 NotebookApp] Serving notebooks from local directory: /uscms_data/d3/username/CMSSW_10_6_30/src
-[I 16:44:47.468 NotebookApp] The Jupyter Notebook is running at:
-[I 16:44:47.468 NotebookApp] http://127.0.0.1:9999/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-[I 16:44:47.468 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 16:44:47.605 NotebookApp]
+[I 17:05:38.373 NotebookApp] Serving notebooks from local directory: /uscms_data/d3/xshen/CMSSW_12_4_8/src
+[I 17:05:38.373 NotebookApp] Jupyter Notebook 6.4.10 is running at:
+[I 17:05:38.373 NotebookApp] http://127.0.0.1:9999/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+[I 17:05:38.373 NotebookApp]  or http://127.0.0.1:9999/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+[I 17:05:38.373 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 17:05:38.381 NotebookApp] 
     
     To access the notebook, open this file in a browser:
-        file:///run/user/57409/jupyter/nbserver-14804-open.html
+        file:///uscms/homes/x/xshen/.local/share/jupyter/runtime/nbserver-15675-open.html
     Or copy and paste one of these URLs:
         http://127.0.0.1:9999/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+     or http://127.0.0.1:9999/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
 Copy and paste the last line (`http://127.0.0.1:9999/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`) to your browser, which opens up a window to Jupyter notebook.
