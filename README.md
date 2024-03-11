@@ -36,7 +36,7 @@ Log in cmslpc:
 ssh -L localhost:9999:localhost:9999 username@cmslpc-sl7.fnal.gov
 ```
 
-Setup CMSSW environment (execute the following ONLY IF you do not have CMSSW_10_6_30/ in your working directory):
+\[Do only once] Setup CMSSW environment (execute the following ONLY IF you do not have CMSSW_10_6_30/ in your working directory):
 ```
 cd nobackup/
 source /cvmfs/cms.cern.ch/cmsset_default.sh
@@ -45,11 +45,17 @@ cd CMSSW_10_6_30/src
 cmsenv
 ```
 
-If you already have CMSSW_10_6_30/ in your directory,
+\[Do everytime] If you already have CMSSW_10_6_30/ in your directory,
 ```
 cd CMSSW_10_6_30/src
 source /cvmfs/cms.cern.ch/cmsset_default.sh
 cmsenv
+```
+
+\[Do only once] Fetch the code and exercises from this github repository:
+```
+git clone https://github.com/Ari-mu-l/software-carpentry.git
+cd software-carpentry/
 ```
 
 Start Jupyter with this command:
