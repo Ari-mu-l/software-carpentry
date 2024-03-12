@@ -14,6 +14,9 @@ Part of the material has been reused from:
 
 # PURSUE2024 Setup
 
+If you haven't done so, configure your computer following the "Prerequisite" section on this page:
+https://uscms.org/uscms_at_work/computing/getstarted/uaf.shtml#nodes
+
 On your own laptop, review the content of your `~/.ssh/config` file by executing:
 ```
 cat ~/.ssh/config
