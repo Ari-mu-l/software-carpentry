@@ -45,9 +45,9 @@ cd CMSSW_12_4_8/src
 cmsenv
 ```
 
-\[Do everytime] If you already have CMSSW_12_4_8/ in your directory,
+\[Do everytime] If you already have CMSSW_12_4_8/ in your nobackup/ directory,
 ```
-cd CMSSW_12_4_8/src
+cd nobacup/CMSSW_12_4_8/src
 source /cvmfs/cms.cern.ch/cmsset_default.sh
 cmsenv
 ```
