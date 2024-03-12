@@ -33,7 +33,7 @@ kinit username@FNAL.GOV
 
 Log in cmslpc:
 ```
-ssh -L localhost:9999:localhost:9999 username@cmslpc-sl7.fnal.gov
+ssh -L localhost:9999:localhost:9999 username@cmslpc-el9.fnal.gov
 ```
 
 \[Do only once] Setup CMSSW environment (execute the following ONLY IF you do not have CMSSW_12_4_8/ in your working directory):
