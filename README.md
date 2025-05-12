@@ -12,7 +12,7 @@ Part of the material has been reused from:
 * Other ROOT training courses: https://github.com/root-project/training
 * Oksana Shadura's (@oshadura) ROOT training: https://github.com/oshadura/carpentries-root-training
 
-# PURSUE2024 Setup
+# PURSUE2025 Setup
 <!---
 If you haven't done so, configure your computer following the "Prerequisite" section on this page:
 https://uscms.org/uscms_at_work/computing/getstarted/uaf.shtml#nodes
