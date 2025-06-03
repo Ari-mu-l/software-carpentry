@@ -42,18 +42,18 @@ ssh -L localhost:9999:localhost:9999 username@cmslpc-el9.fnal.gov
 
 Skip this chunk if you already have CMSSW in your working directory
 ===================================================================================
-\[Do only once] Setup CMSSW environment (execute the following ONLY IF you do not have CMSSW_12_4_8/ in your working directory):
+\[Do only once] Setup CMSSW environment (execute the following ONLY IF you do not have CMSSW_XX_X_X/ in your working directory):
 ```
 cd nobackup/
 source /cvmfs/cms.cern.ch/cmsset_default.sh
 export SCRAM_ARCH=el9_amd64_gcc12
-cmsrel CMSSW_13_3_3
-cd CMSSW_13_3_3/src
+cmsrel CMSSW_XX_X_X
+cd CMSSW_XX_X_X/src
 cmsenv
 ```
 ==================================================================================
 
-\[Do everytime] If you already have CMSSW_13_3_3/ in your nobackup/ directory,
+\[Do everytime] If you already have CMSSW_XX_X_X/ in your nobackup/ directory,
 ```
 cd nobacup/CMSSW_XX_X_X/src
 source /cvmfs/cms.cern.ch/cmsset_default.sh
